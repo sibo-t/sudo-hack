@@ -1,1 +1,53 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iMpilo Connexions</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div class="full_page">
+        <div class="navigation">
+            <div>
+                <a href="home.html">iMpilo Connexions</a>
+                <img src="/home/wtc/Documents/Sudo-Hack/sudo-hack/Sudo-hack/src/main/resources/web/healthcre-logo.jpg" width="128px"/>
+            </div>
+            <nav>
+                <ul id="Tabs">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Chat</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><button class="loginbutton" onclick="document.getElementById('login-form').style.display='block'>Login</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="login_form" class='login_page'>
+        <div class="form_box">
+            <div id="button"></div>
+            <button type="button" onclick="login()" class="toggle-button">Log In</button>
+            <button type="button" onclick="register()" class="toggle-button">Register</button>
+        </div>
+        <form id="login" class="input-group-login">
+            <input type="text" class="input-field"placeholder="Email id" required>
+            <input type='password' class='input-field'placeholder='Enter Password' required>
+            <input type='checkbox' class='check-box'><span>Remember Password</span>
+            <button type='submit' class='submit-btn'>Log in</button>
+        </form>
+        <form id='register' class='input-group-register'>
+            <input type='text' class='input-field' placeholder='First Name' required>
+            <input type='text' class='input-field' placeholder='Last Name ' required>
+            <input type='email' class='input-field' placeholder='Email Id' required>
+            <input type='password' class='input-field' placeholder='Enter Password' required>
+            <input type='password' class='input-field' placeholder='Confirm Password'  required>
+            <input type='checkbox' class='check-box'><span>I agree to the terms and                                                   conditions</span>
+            <button type='submit' class='submit-btn'>Register</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
